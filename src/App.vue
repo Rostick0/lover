@@ -1,7 +1,26 @@
+<script setup>
+import TheFooter from '@/components/TheFooter/TheFooter.vue';
+</script>
+
 <template>
-  <router-view />
+  <div class="wrapper">
+    <div class="wrapper__inner">
+      <router-view />
+    </div>
+    <TheFooter />
+  </div>
 </template>
 
 <style lang="scss">
 @import '@/app/styles/index.scss';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  &__inner {
+    flex-grow: 1;
+  }
+}
 </style>

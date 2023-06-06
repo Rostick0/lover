@@ -1,2 +1,12 @@
 @import './reset';
 @import './fonts';
+
+body {
+    font-family: PT Sans, sans-serif;
+}
+
+.main-container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1245px;
+}

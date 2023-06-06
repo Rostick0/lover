@@ -1,0 +1,50 @@
+.footer {
+    background-color: #252525;
+    color: #fff;
+    font-size: 14.67px;
+
+    &__main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        grid-gap: 10px;
+        width: 100%;
+    }
+
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+
+    &__link {
+        color: #fff;
+        text-decoration: underline;
+        line-height: 35px;
+    }
+
+    &__payments {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        grid-gap: 10px;
+
+        img {
+            height: 30px;
+        }
+    }
+
+    &__bottom {
+        font-size: 14px;
+        text-align: center;
+        margin: 15px 5px;
+    }
+}
