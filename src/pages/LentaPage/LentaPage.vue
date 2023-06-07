@@ -1,3 +1,9 @@
-<script></script>
+<script setup>
+import LayoutDefault from '@/layout/LayoutDefault/LayoutDefault.vue'
+</script>
 
-<template>1</template>
+<template>
+    <LayoutDefault>
+        <div></div>
+    </LayoutDefault>
+</template>

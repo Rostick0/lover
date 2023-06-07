@@ -5,8 +5,14 @@ body {
     font-family: PT Sans, sans-serif;
 }
 
-.main-container {
+.container {
     margin: 0 auto;
     width: 100%;
+    max-width: 1000px;
+}
+
+.container-main {
+    @extend .container;
+
     max-width: 1245px;
 }

@@ -2,7 +2,7 @@
 
 <template>
     <footer class="footer">
-        <div class="main-container footer__main-container">
+        <div class="container-main footer__main-container">
             <div class="footer__top">
                 <div class="footer__copyright">
                     © nataliedate.com 2023. Все права защищены.
