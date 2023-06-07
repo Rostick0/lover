@@ -19,10 +19,10 @@ import { ROUTER_CONST } from '@/app/router/';
                     <span>
                         <span>0</span>
                         <br>
-                        <span>монеток</span>
+                        <span>Монет</span>
                     </span>
                 </div>
-                <UiButton>Пополнить</UiButton>
+                <UiButton class="aside__user_pay">Пополнить</UiButton>
             </div>
         </div>
         <ul class="aside__nav aside-nav">
@@ -40,7 +40,7 @@ import { ROUTER_CONST } from '@/app/router/';
                 </RouterLink>
             </li>
             <li class="aside-nav__item"
-                :class="{ '_active': $router.currentRoute.value.path === ROUTER_CONST.chat || '/' + ($router.currentRoute.value.path.split('/')[1]) === ROUTER_CONST.messages }">
+                :class="{ '_active': $router.currentRoute.value.path === ROUTER_CONST.chat || $router.currentRoute.value.path.substring(0, 9) === ROUTER_CONST.messages }">
                 <RouterLink class="aside-nav__link" :to="ROUTER_CONST.chat">
                     <span class="aside-nav__icon">
                         <svg width="20" height="20" viewBox="0 0 18 13" fill="#252525" xmlns="http://www.w3.org/2000/svg">

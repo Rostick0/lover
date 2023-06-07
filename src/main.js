@@ -6,7 +6,6 @@ import componentsUI from '@/ui';
 const app = createApp(App);
 
 componentsUI.forEach(component => {
-    console.log(component)
     app.component(component.name, component);
 });
 
