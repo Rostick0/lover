@@ -1,6 +1,7 @@
 import UiButton from "./UiButton/UiButton.vue";
 import UiButtonRed from './UiButtonRed/UiButtonRed.vue';
 import UiButtonWhite from './UiButtonWhite/UiButtonWhite.vue';
+import UiCheckbox from './UiCheckbox/UiCheckbox.vue';
 import UiCounter from './UiCounter/UiCounter.vue';
 import UiInput from './UiInput/UiInput.vue';
 import UiOnline from './UiOnline/UiOnline.vue';
@@ -11,6 +12,7 @@ export default [
     UiButton,
     UiButtonRed,
     UiButtonWhite,
+    UiCheckbox,
     UiCounter,
     UiInput,
     UiOnline,

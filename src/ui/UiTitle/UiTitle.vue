@@ -4,8 +4,18 @@ export default {
 }
 </script>
 
+<script setup>
+import { defineProps } from 'vue';
+
+const props = defineProps({
+    type: {
+        type: String
+    }
+});
+</script>
+
 <template>
-    <div class="title">
+    <div class="title" :class="props.type">
         <slot></slot>
     </div>
 </template>

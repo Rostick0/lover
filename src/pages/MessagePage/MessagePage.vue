@@ -4,6 +4,8 @@ import LayoutDefault from '@/layout/LayoutDefault/LayoutDefault.vue'
 
 <template>
     <LayoutDefault>
-        <div></div>
+       <div class="message">
+        
+       </div>
     </LayoutDefault>
 </template>

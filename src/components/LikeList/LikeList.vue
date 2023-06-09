@@ -34,7 +34,10 @@ if (props.type === 'from_me') {
         <RouterLink v-for="like in props.likes" :key="like.id" class="like__item" to="/profile/">
             <div class="like_item_user user">
                 <img width="50" height="50" class="user__avatar" :src="like.avatar" :alt="like.name">
-                <div class="user__info">{{ like.name }}, {{ like.year }}</div>
+                <div class="user__info">
+                    <span>{{ like.name }}</span>
+                    <span>, {{ like.year }}</span>
+                </div>
             </div>
             <div class="like_item_content">
                 {{ typeText(like.name, like.gender) }} {{ like.createDate }}
