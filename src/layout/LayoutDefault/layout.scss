@@ -1,0 +1,15 @@
+.main {
+    background-color: #f6f7fb;
+    flex-grow: 1;
+
+    &__container {
+        display: flex;
+        align-items: flex-start;
+        column-gap: 90px;
+
+        &_right {
+            flex-grow: 1;
+            padding: 40px 25px 20px;
+        }
+    }
+}

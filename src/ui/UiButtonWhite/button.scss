@@ -1,0 +1,19 @@
+.button {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px #b4b4b4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+    font-size: 16px;
+    padding: 6px 10px;
+
+    &.blue {
+        color: #189BE4;
+    }
+
+    &.green {
+        color: #00B778;
+    }
+}

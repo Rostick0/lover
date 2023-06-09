@@ -45,13 +45,12 @@ const props = defineProps({
     prevEl: prev,
     nextEl: next,
 }" :modules="sliderModules">
-
             <SwiperSlide v-for="people in props.peoples" :key="people.id">
                 <div class="slide">
                     <div class="slide__top">
                         <div class="slide__info">
                             <div>{{ people.name }}, {{ people.year }}</div>
-                            <div class="slide__online"></div>
+                            <UiOnline class="slide__online"></UiOnline>
                         </div>
                         <div class="slide__photo">
                             <svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
@@ -64,21 +63,21 @@ const props = defineProps({
                     </div>
                     <img class="slide__img" :src="people.avatar" :alt="people.name">
                     <div class="slide__bottom">
-                        <button class="slide__button">
+                        <UiButtonWhite class="slide__button" color="blue">
                             <span>Написать</span>
                             <svg width="18" height="18" viewBox="0 0 18 14" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4.845 13.93 17.923 1.646.007.641l1.874 5.17 11.613-2.554L2.956 8.765z"
                                     fill="#189BE4" fill-rule="evenodd"></path>
                             </svg>
-                        </button>
-                        <button class="slide__button">
+                        </UiButtonWhite>
+                        <UiButtonWhite class="slide__button" color="green">
                             <span>Лайк</span>
                             <svg width="18" height="18" viewBox="0 0 17 16" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M12.078 0C10.63 0 9.238.675 8.33 1.741A4.988 4.988 0 0 0 4.581 0C2.016 0 0 2.016 0 4.582c0 3.148 2.832 5.714 7.122 9.612l1.208 1.092 1.208-1.1c4.29-3.89 7.122-6.456 7.122-9.604C16.66 2.016 14.644 0 12.078 0Z"
                                     fill="#00B778" fill-rule="evenodd"></path>
                             </svg>
-                        </button>
+                        </UiButtonWhite>
                     </div>
                 </div>
             </SwiperSlide>

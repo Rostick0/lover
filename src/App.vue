@@ -20,6 +20,8 @@ import TheFooter from '@/components/TheFooter/TheFooter.vue';
   min-height: 100vh;
 
   &__inner {
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
   }
 }

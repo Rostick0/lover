@@ -1,0 +1,22 @@
+@keyframes anim-online {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.online {
+    animation: anim-online 1s infinite;
+    background-color: #5fb600;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    min-width: 6px;
+}
