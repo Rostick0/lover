@@ -1,0 +1,17 @@
+.title {
+    font-size: 20px;
+    font-weight: bold;
+
+    &._section {
+        display: flex;
+        column-gap: 15px;
+        margin-bottom: 30px;
+
+        &::before {
+            background: linear-gradient(to bottom, transparent, #afafaf 50%, transparent);
+            content: "";
+            width: 1px;
+            height: 100%;
+        }
+    }
+}
