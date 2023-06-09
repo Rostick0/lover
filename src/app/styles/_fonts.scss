@@ -1,19 +1,17 @@
 @font-face {
     font-family: 'PT Sans';
-    src: url('@/app/fonts/PTSans-Bold.woff2') format('woff2'),
-        url('@/app/fonts/PTSans-Bold.woff') format('woff');
+    src: url('@/app/fonts/PTSansBold.woff2') format('woff2'),
+        url('@/app/fonts/PTSansBold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
-    font-display: swap;
 }
 
 @font-face {
     font-family: 'PT Sans';
-    src: url('@/app/fonts/PTSans-Regular.woff2') format('woff2'),
-        url('@/app/fonts/PTSans-Regular.woff') format('woff');
+    src: url('@/app/fonts/PTSansRegular.woff2') format('woff2'),
+        url('@/app/fonts/PTSansRegular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 
 @font-face {
@@ -22,7 +20,6 @@
         url('@/app/fonts/PTSansRegularCyr.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 
 @font-face {
@@ -31,5 +28,4 @@
         url('@/app/fonts/PTSansBoldCyr.woff') format('woff');
     font-weight: bold;
     font-style: normal;
-    font-display: swap;
 }
