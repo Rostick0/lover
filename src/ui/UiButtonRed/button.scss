@@ -4,11 +4,13 @@
     border-radius: 25px;
     box-shadow: 0 3px 6px #efa5a8, inset 0 -15px 0 #d82836;
     display: block;
+    font-family: "PT Sans", sans-serif;
     font-size: 20px;
     font-weight: bold;
     margin: 50px auto 0;
     padding: 5px 17.5px;
     transition: 200ms;
+    text-transform: uppercase;
 
     &:hover {
         background-color: #fb4a58;

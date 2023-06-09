@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <input />
+    <input class="input" />
 </template>
 
 <style lang="scss" scoped>

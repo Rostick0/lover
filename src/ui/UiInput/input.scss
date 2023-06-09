@@ -2,7 +2,12 @@
     background-color: #fff;
     border: 1px solid #000;
     border-radius: 15px;
+    font-size: 16px;
     padding: 0 20px;
     line-height: 30px;
     transition: 200ms;
+
+    &::placeholder {
+        color: #b3b3b4;
+    }
 }

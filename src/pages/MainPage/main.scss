@@ -18,55 +18,7 @@
     }
 }
 
-.slide {
-    position: relative;
-    text-align: center;
-
-    &__top {
-        display: flex;
-        justify-content: space-between;
-        padding: 5px 10px;
-        position: absolute;
-        top: 0;
-        width: 100%;
-    }
-
-    &__img {
-        border-radius: 15px;
-        // max-width: 210px;
-        width: 100%;
-        height: 100%;
-    }
-
-    &__bottom {
-        display: flex;
-        justify-content: space-between;
-        column-gap: 5px;
-        padding: 0 10px;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-    }
-
-    &__button {
-        background: #fff;
-        border-radius: 15px;
-        box-shadow: 0 2px 5px #b4b4b4;
-        display: flex;
-        column-gap: 5px;
-        font-size: 16px;
-        padding: 6px 10px;
-    }
-}
-
 .registration {
-    &__field {
-        padding: 35px 0;
-        margin: 0 auto;
-        max-width: 305px;
-        width: 100%;
-    }
-
     &__content {
         display: flex;
         align-items: flex-start;
@@ -100,21 +52,6 @@
             background-color: #454545;
             box-shadow: 0 3px 10px dimgray, 0 -15px 0 #2d2d2d inset;
         }
-    }
-
-    &__socials {
-        display: flex;
-        flex-direction: column;
-        row-gap: 8px;
-    }
-
-    &__social {
-        color: #fff;
-        display: flex;
-        align-items: center;
-        font-size: 14.67px;
-        font-weight: bold;
-        padding: 2px 30px;
     }
 }
 
