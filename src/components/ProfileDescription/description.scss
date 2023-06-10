@@ -1,0 +1,21 @@
+.description {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 4px -1px rgba(37, 37, 37, .5);
+    padding: 25px 30px;
+    position: relative;
+    word-break: break-word;
+
+    &::before {
+        background-color: #fff;
+        box-shadow: 1px -1px 1px 0 rgba(37, 37, 37, .2);
+        content: "";
+        display: block;
+        position: absolute;
+        top: -10px;
+        left: 35px;
+        transform: rotate(-45deg);
+        width: 20px;
+        height: 20px;
+    }
+}

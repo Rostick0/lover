@@ -1,0 +1,14 @@
+.profile {
+    &__info {
+        margin-bottom: 105px;
+    }
+
+    &__album {
+        margin-bottom: 30px;
+    }
+
+    &__description {
+        max-width: calc(100% - 115px);
+
+    }
+}
