@@ -1,9 +1,11 @@
 @import './reset';
 @import './fonts';
+@import './helpers';
 
-body {
+body,
+textarea,
+input {
     font-family: "PT Sans", sans-serif;
-    font-family: 'PT Sans';
 }
 
 .container {

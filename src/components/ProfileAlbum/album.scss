@@ -8,18 +8,5 @@
     &__count {
         color: rgba(37,37,37,.5);
         font-size: 14px;
-    }
-
-    &__list {
-        display: flex;
-    }
-
-    &__item {
-        cursor: pointer;
-        padding: 15px;
-    }
-
-    &__image {
-        display: block;
-    }    
+    }  
 }

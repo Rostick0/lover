@@ -1,4 +1,6 @@
-<script></script>
+<script setup>
+import ImageAlbum from '../ImageAlbum/ImageAlbum.vue';
+</script>
 
 <template>
     <div class="album">
@@ -6,11 +8,7 @@
             <UiTitle>Фотографии</UiTitle>
             <div class="album__count">(1)</div>
         </div>
-        <ul class="album__list">
-            <li class="album__item">
-                <img class="album__image" width="75" height="75" src="https://engbk.blob.core.windows.net/user-photo-preview/5955122.jpg" alt="">
-            </li>
-        </ul>
+        <ImageAlbum></ImageAlbum>
     </div>
 </template>
 

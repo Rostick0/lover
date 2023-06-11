@@ -22,8 +22,35 @@ import { getZodiac } from '@/app/helpers/zodiac';
             </div>
         </div>
         <div class="profile-info__bottom">
-            <img class="profile-info__avatar" src="https://engbk.blob.core.windows.net:443/user-photo-avatar/5955122.jpg"
-                alt="">
+            <div class="profile-info__bottom_left">
+                <img class="profile-info__avatar"
+                    src="https://engbk.blob.core.windows.net:443/user-photo-avatar/5955122.jpg" alt="">
+                <div class="profile-info__application">
+                    <UiButtonWhite class="profile-info__button _like">
+                        <svg width="20" height="20" viewBox="0 0 30 28" xmlns="http://www.w3.org/2000/svg"
+                            class="icon-right liked">
+                            <defs>
+                                <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="like_svg__a">
+                                    <stop stop-color="#1DB77A" offset="0%"></stop>
+                                    <stop stop-color="#149763" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path
+                                d="M35.577 25.797c-1.588-1.866-4.023-3.047-6.56-3.047-4.49 0-8.017 3.528-8.017 8.018 0 5.51 4.956 10 12.464 16.822l1.374 1.242c.409.369 1.07.367 1.479-.005l1.374-1.252c7.508-6.807 12.464-11.297 12.464-16.807 0-4.49-3.528-8.018-8.018-8.018-2.536 0-4.97 1.18-6.56 3.047Z"
+                                transform="translate(-20.5 -22)" fill="url(#like_svg__a)" fill-rule="evenodd"></path>
+                        </svg>
+                    </UiButtonWhite>
+                    <UiButtonWhite class="profile-info__button _message" color="blue">
+                        <span>Написать</span>
+                        <svg width="28" height="28" viewBox="0 0 32 24" xmlns="http://www.w3.org/2000/svg"
+                            class="icon-right">
+                            <path
+                                d="M9.27 10.05a1.05 1.05 0 0 1-1.053-1.06c0-.579.457-1.058 1.053-1.058h6.553c.596 0 1.053.48 1.053 1.058a1.05 1.05 0 0 1-1.053 1.06H9.27Zm0 5.973c-.596 0-1.053-.46-1.053-1.039 0-.6.457-1.059 1.053-1.059h13.127c.575 0 1.053.46 1.053 1.06 0 .578-.478 1.038-1.053 1.038H9.27ZM12.25 0h7.169c3.277 0 6.256 1.339 8.42 3.516 2.145 2.178 3.495 5.175 3.495 8.471 0 3.297-1.35 6.294-3.495 8.451a11.838 11.838 0 0 1-8.42 3.517H1.386c-.576 0-1.053-.46-1.053-1.04V11.988c0-3.296 1.33-6.293 3.495-8.47A11.838 11.838 0 0 1 12.248 0Z"
+                                fill="#179BE4" fill-rule="evenodd"></path>
+                        </svg>
+                    </UiButtonWhite>
+                </div>
+            </div>
             <ul class="profile-info__about user-about">
                 <li class="user-about__item">
                     <svg width="24" height="24" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
@@ -72,6 +99,4 @@ import { getZodiac } from '@/app/helpers/zodiac';
     </div>
 </template>
 
-<style lang="scss" scoped>
-@import './profile.scss';
-</style>
+<style lang="scss" scoped>@import './profile.scss';</style>
