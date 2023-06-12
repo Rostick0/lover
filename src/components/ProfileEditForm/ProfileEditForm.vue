@@ -1,6 +1,7 @@
 <script setup>
 import ProfileEditLabel from '@/components/ProfileEditLabel/ProfileEditLabel.vue';
 import ProfileUploadImage from '../ProfileUploadImage/ProfileUploadImage.vue';
+import { getPeopleAcceptableYears, getDays, getAcceptableYears, getMonths } from '@/app/helpers/date';
 
 const purpose = [
     {
@@ -32,6 +33,7 @@ const purpose = [
         data: 'Занятие спортом'
     }
 ];
+
 </script>
 
 <template>
@@ -54,9 +56,9 @@ const purpose = [
             <ProfileEditLabel>
                 <UiTitleField>Дата рождения</UiTitleField>
                 <div class="edit__selects edit__birthday">
-                    <UiSelect class="edit__form_input" :options="purpose"></UiSelect>
-                    <UiSelect class="edit__form_input" :options="purpose"></UiSelect>
-                    <UiSelect class="edit__form_input" :options="purpose"></UiSelect>
+                    <UiSelect class="edit__form_input" :options="getDays()"></UiSelect>
+                    <UiSelect class="edit__form_input" :options="getMonths()"></UiSelect>
+                    <UiSelect class="edit__form_input" :options="getAcceptableYears()"></UiSelect>
                 </div>
             </ProfileEditLabel>
             <ProfileEditLabel>
@@ -64,11 +66,11 @@ const purpose = [
                 <div class="edit__selects">
                     <div class="edit__year">
                         <strong>От</strong>
-                        <UiSelect :options="purpose"></UiSelect>
+                        <UiSelect :options="getPeopleAcceptableYears()"></UiSelect>
                     </div>
                     <div class="edit__year">
                         <strong>До</strong>
-                        <UiSelect :options="purpose"></UiSelect>
+                        <UiSelect :options="getPeopleAcceptableYears()"></UiSelect>
                     </div>
                 </div>
             </ProfileEditLabel>
@@ -78,7 +80,7 @@ const purpose = [
             </ProfileEditLabel>
             <ProfileEditLabel>
                 <UiTitleField>О себе</UiTitleField>
-                <UiTextarea class="edit__form_input" value="Ярослав"></UiTextarea>
+                <UiTextarea class="" value="Ярослав"></UiTextarea>
             </ProfileEditLabel>
         </div>
         <div class="edit__agree">

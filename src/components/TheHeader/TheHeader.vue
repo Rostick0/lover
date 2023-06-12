@@ -1,11 +1,18 @@
 <script setup>
 import { ROUTER_CONST } from '@/app/router';
+import ButtonLogout from '../ButtonLogout/ButtonLogout.vue';
 </script>
 
 <template>
     <header class="header">
         <div class="container">
             <div class="header__container">
+                <div class="header__burger">
+                    <svg height="30" viewBox="0 0 24 24" width="30" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 15.5v2h20v-2H2zm0-5v2h20v-2H2zm0-5v2h20v-2H2z"></path>
+                    </svg>
+                    <UiCounter class="header__burger_counter">30+</UiCounter>
+                </div>
                 <RouterLink class="header__logo" :to="ROUTER_CONST.main">
                     <img width="221" src="@/app/assets/image/logo.png" alt="Лого">
                 </RouterLink>
@@ -19,15 +26,7 @@ import { ROUTER_CONST } from '@/app/router';
                                 fill="#FFF" fill-rule="evenodd"></path>
                         </svg>
                     </RouterLink>
-                    <button class="header__application_item _logout">
-                        <span>Выйти</span>
-                        <svg width="27" height="18" viewBox="0 0 27 18" xmlns="http://www.w3.org/2000/svg"
-                            class="auth-btn__icon icon-right">
-                            <path
-                                d="M2.75.76h16.5c1.008 0 1.833.824 1.833 1.833V6.25H19.25V2.574H2.75v12.861h16.5V11.75h1.833v3.676a1.823 1.823 0 0 1-1.833 1.815H2.75a1.823 1.823 0 0 1-1.833-1.815V2.593c0-1.018.825-1.834 1.833-1.834Zm20.667 11.907L27.083 9l-3.666-3.667v2.75H14.25v1.834h9.167v2.75Z"
-                                fill="#FFF" fill-rule="evenodd"></path>
-                        </svg>
-                    </button>
+                    <ButtonLogout class="header__logout"></ButtonLogout>
                 </div>
             </div>
         </div>

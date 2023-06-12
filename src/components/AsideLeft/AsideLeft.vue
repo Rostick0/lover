@@ -1,9 +1,6 @@
 <script setup>
 import { ROUTER_CONST } from '@/app/router/';
-
-// const route = ROUTER_CONST;
-
-// console.log(route)
+import ButtonLogout from '../ButtonLogout/ButtonLogout.vue';
 </script>
 
 <template>
@@ -85,6 +82,7 @@ import { ROUTER_CONST } from '@/app/router/';
                     </RouterLink>
                 </li>
             </ul>
+            <ButtonLogout class="aside__logout"></ButtonLogout>
         </div>
     </aside>
 </template>

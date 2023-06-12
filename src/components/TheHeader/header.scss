@@ -1,6 +1,6 @@
 .header {
     background-color: #fff;
-    box-shadow: 0 1px 4px 0 rgba(37,37,37,.5);
+    box-shadow: 0 1px 4px 0 rgba(37, 37, 37, .5);
     position: sticky;
     top: 0;
     padding: 5.5px 0;
@@ -11,6 +11,18 @@
         display: flex;
         align-items: center;
         column-gap: 30px;
+    }
+
+    &__burger {
+        display: none;
+        position: relative;
+
+        &_counter {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(50%, -50%);
+        }
     }
 
     &__logo {
@@ -37,13 +49,49 @@
             &._search {
                 background-color: #ef2b3a;
             }
-
-            &._logout {
-                background-color: #252525;
-                box-shadow: 0 2px 4px 0 rgba(37, 37, 37, .5);
-            }
         }
     }
 
+    @media (max-width: 1024px) {
+        height: 65px;
+        padding: 0;
 
+        &__container {
+            justify-content: space-between;
+            height: 65px;
+        }
+
+        &__burger {
+            display: block;
+        }
+
+        &__logo {
+            img {
+                width: 164px;
+                height: 55px;
+            }
+        }
+
+        &__application {
+            flex-grow: 0;
+
+            &_item {
+                border-radius: 50%;
+                padding: 7.5px;
+
+                svg {
+                    width: 15px;
+                    height: 15px;
+                }
+
+                span {
+                    display: none;
+                }
+            }
+        }
+
+        &__logout {
+            display: none;
+        }
+    }
 }

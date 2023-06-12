@@ -12,4 +12,10 @@
             padding: 40px 25px 20px;
         }
     }
+
+    @media(max-width: 1280px) {
+        &__container {
+            column-gap: 45px;
+        }
+    }
 }
