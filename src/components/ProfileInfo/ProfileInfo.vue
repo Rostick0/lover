@@ -1,16 +1,12 @@
 <script setup>
 import { getZodiac } from '@/app/helpers/zodiac';
+import ButtonBack from '../ButtonBack/ButtonBack.vue';
 </script>
 
 <template>
     <div class="profile-info">
         <div class="profile-info__top">
-            <div class="profile-info__back">
-                <svg width="18" height="18" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg" class="icon-left">
-                    <path d="M7.4 10.6 2.8 6l4.6-4.6L6 0 0 6l6 6z" fill-rule="evenodd"></path>
-                </svg>
-                <span>Назад</span>
-            </div>
+            <ButtonBack></ButtonBack>
             <div class="profile-info__short-info">
                 <UiTitle class="profile-info__short-info_title" type="section">
                     <span>
@@ -99,4 +95,6 @@ import { getZodiac } from '@/app/helpers/zodiac';
     </div>
 </template>
 
-<style lang="scss" scoped>@import './profile.scss';</style>
+<style lang="scss" scoped>
+@import './profile.scss';
+</style>

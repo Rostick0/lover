@@ -1,4 +1,5 @@
 <script setup>
+import { ROUTER_CONST } from '@/app/router/';
 import { defineProps } from 'vue';
 
 const props = defineProps({
@@ -10,7 +11,8 @@ const props = defineProps({
 
 <template>
     <div class="message-list">
-        <div v-for="message in props.messages" :key="message.id" class="message-list__item">
+        <RouterLink :to="ROUTER_CONST.messages + '/' + message.user_id" v-for="message in props.messages" :key="message.id"
+            class="message-list__item">
             <UiCounter v-if="message.count_messages" class="message-list__counter">{{ message.count_messages }}</UiCounter>
             <div class="message-list__item_inner">
                 <div class="message-list__user user">
@@ -44,7 +46,7 @@ const props = defineProps({
                     <div class="message-list__letter">{{ message.message }}</div>
                 </div>
             </div>
-        </div>
+        </RouterLink>
     </div>
 </template>
 

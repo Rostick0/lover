@@ -6,6 +6,7 @@ import ChatMessageList from '@/components/ChatMessageList/ChatMessageList.vue';
 const messages = [
     {
         id: 1,
+        user_id: 1,
         name: 'Ната',
         year: 33,
         avatar: 'https://engbk.blob.core.windows.net/user-photo-avatar/4917063.jpg',
@@ -18,6 +19,7 @@ const messages = [
     },
     {
         id: 2,
+        user_id: 2,
         name: 'Ната',
         year: 26,
         avatar: 'https://engbk.blob.core.windows.net/user-photo-avatar/5674156.jpg',

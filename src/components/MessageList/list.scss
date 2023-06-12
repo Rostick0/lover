@@ -1,0 +1,9 @@
+.message {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        padding: 20px 0;
+        height: calc(100vh - 500px);
+    }
+}

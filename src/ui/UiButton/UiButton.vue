@@ -5,11 +5,17 @@ export default {
 </script>
 
 <script setup>
+import { defineProps } from 'vue';
 
+const props = defineProps({
+    styleButton: {
+        type: String
+    }
+});
 </script>
 
 <template>
-    <button class="button">
+    <button class="button" :class="props.styleButton">
         <slot></slot>
     </button>
 </template>
