@@ -1,4 +1,8 @@
 .chat-checkbox {
     display: flex;
     column-gap: 12px;
+
+    @media (max-width: 400px) {
+        font-size: 12px;
+    }
 }

@@ -29,8 +29,10 @@
     &__avatar {
         border-radius: 10px;
         box-shadow: 0 0 4px -1px rgba(37, 37, 37, .5);
-        width: 333px;
-        height: 333px;
+        width: 100%;
+        max-width: 333px;
+        height: 100%;
+        max-height: 333px;
     }
 
     &__application {
@@ -51,6 +53,20 @@
             border-radius: 5px;
             padding-left: 22px;
             padding-right: 22px;
+        }
+    }
+
+    @media (max-width: 650px) {
+        &__bottom {
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 30px;
+        }
+
+        &__application {
+            justify-content: center;
+            right: initial;
+            width: 100%;
         }
     }
 }

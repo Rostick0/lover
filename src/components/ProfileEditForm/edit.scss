@@ -14,10 +14,12 @@
         max-width: 220px;
     }
 
-    &__birthday {
-        &>* {
-            &:nth-child(n+1) {
-                flex-basis: 150px;
+    @media (min-width: 550px) {
+        &__birthday {
+            &>* {
+                &:nth-child(n+1) {
+                    flex-basis: 150px;
+                }
             }
         }
     }
@@ -30,5 +32,29 @@
 
     &__agree {
         margin: 15px 0;
+    }
+
+    @media (max-width: 550px) {
+        &__selects {
+            flex-direction: column;
+            row-gap: 20px;
+        }
+
+        &__form_input {
+            max-width: 100%;
+        }
+
+        &__years {
+            flex-direction: row;
+        }
+
+        &__year {
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        &__agree {
+            margin: 10px 0;
+        }
     }
 }

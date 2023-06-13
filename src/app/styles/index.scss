@@ -9,6 +9,7 @@ input {
 }
 
 .container {
+    padding: 0 30px;
     margin: 0 auto;
     width: 100%;
     max-width: 1000px;
@@ -18,4 +19,10 @@ input {
     @extend .container;
 
     max-width: 1245px;
+}
+
+@media (max-width: 550px) {
+    .container {
+        padding: 0 15px;
+    }
 }

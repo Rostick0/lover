@@ -1,10 +1,14 @@
 <script setup>
 import { ROUTER_CONST } from '@/app/router/';
 import ButtonLogout from '../ButtonLogout/ButtonLogout.vue';
+import { isActiveAside, setIsActiveAsideFalse } from '@/app/composible/aside';
+
+const classIsActive = () => isActiveAside.value ? '_active' : '';
+
 </script>
 
 <template>
-    <aside class="aside">
+    <aside class="aside" :class="classIsActive()" @click.self="setIsActiveAsideFalse">
         <div class="aside__inner">
             <div class="aside__user">
                 <RouterLink class="aside__user_avatar" :to="ROUTER_CONST.profile + '/1'">
@@ -87,4 +91,6 @@ import ButtonLogout from '../ButtonLogout/ButtonLogout.vue';
     </aside>
 </template>
 
-<style lang="scss" scoped>@import './aside.scss';</style>
+<style lang="scss" scoped>
+@import './aside.scss';
+</style>

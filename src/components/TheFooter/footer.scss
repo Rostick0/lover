@@ -2,6 +2,7 @@
     background-color: #252525;
     color: #fff;
     font-size: 14.67px;
+    padding-top: 5px;
 
     &__main-container {
         display: flex;
@@ -46,5 +47,15 @@
         font-size: 14px;
         text-align: center;
         margin: 15px 5px;
+    }
+
+    @media (max-width: 550px) {
+        &__top {
+            flex-direction: column;
+        }
+    
+        &__links {
+            flex-direction: column;
+        }
     }
 }

@@ -50,4 +50,19 @@
             opacity: 1;
         }
     }
+
+    @media (max-width: 500px) {
+        &__bottom {
+            align-items: initial;
+            flex-direction: column;
+
+            &_left {
+                padding-bottom: 0;
+            }
+
+            &_right {
+                margin-left: auto;
+            }
+        }
+    }
 }

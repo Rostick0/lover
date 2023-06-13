@@ -7,7 +7,7 @@ import LentaApplication from '@/components/LentaApplication/LentaApplication.vue
 <template>
     <LayoutDefault>
         <div class="lenta">
-            <LentaUser class="lenta__user"></LentaUser>
+            <LentaUser class="lenta__user" @click="testUpdate"></LentaUser>
             <LentaApplication class="lenta__application"></LentaApplication>
         </div>
     </LayoutDefault>

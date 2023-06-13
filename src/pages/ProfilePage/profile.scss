@@ -9,6 +9,11 @@
 
     &__description {
         max-width: calc(100% - 115px);
+    }
 
+    @media (max-width: 650px) {
+        &__description {
+            max-width: 100%;
+        }
     }
 }

@@ -63,7 +63,7 @@ const purpose = [
             </ProfileEditLabel>
             <ProfileEditLabel>
                 <UiTitleField>Ищу партнера возрастом</UiTitleField>
-                <div class="edit__selects">
+                <div class="edit__selects edit__years">
                     <div class="edit__year">
                         <strong>От</strong>
                         <UiSelect :options="getPeopleAcceptableYears()"></UiSelect>

@@ -1,13 +1,22 @@
 <script setup>
+// import { ref } from 'vue';
 import { ROUTER_CONST } from '@/app/router';
 import ButtonLogout from '../ButtonLogout/ButtonLogout.vue';
+import { isActiveAside, setIsActiveAsideTrue } from '@/app/composible/aside';
+
+
+const test = () => {
+    setIsActiveAsideTrue();
+
+    console.log(isActiveAside.value)
+}
 </script>
 
 <template>
     <header class="header">
         <div class="container">
             <div class="header__container">
-                <div class="header__burger">
+                <div class="header__burger" @click="test">
                     <svg height="30" viewBox="0 0 24 24" width="30" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2 15.5v2h20v-2H2zm0-5v2h20v-2H2zm0-5v2h20v-2H2z"></path>
                     </svg>
