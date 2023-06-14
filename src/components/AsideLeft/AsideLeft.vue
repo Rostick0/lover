@@ -11,7 +11,7 @@ const classIsActive = () => isActiveAside.value ? '_active' : '';
     <aside class="aside" :class="classIsActive()" @click.self="setIsActiveAsideFalse">
         <div class="aside__inner">
             <div class="aside__user">
-                <RouterLink class="aside__user_avatar" :to="ROUTER_CONST.profile + '/1'">
+                <RouterLink class="aside__user_avatar" :to="ROUTER_CONST.profile + '/1'" @click="setIsActiveAsideFalse">
                     <img src="https://engbk.blob.core.windows.net:443/user-photo-avatar/5941790.jpg" alt="">
                 </RouterLink>
                 <div class="aside__user_data">Дмитрий, 21</div>

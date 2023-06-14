@@ -31,4 +31,15 @@
         display: flex;
         min-width: 24px;
     }
+
+    @media (max-width: 480px) {
+        &__form {
+            column-gap: 10px;
+        }
+
+        &__send {
+            border-radius: 50%;
+            padding: 5px;
+        }
+    }
 }

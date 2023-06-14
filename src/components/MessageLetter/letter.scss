@@ -30,4 +30,23 @@
         font-size: 18px;
         word-wrap: break-word;
     }
+
+    @media (max-width: 576px) {
+        row-gap: 24px;
+
+        &__user_name {
+            font-size: 13px;
+        }
+
+        &__content {
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 420px) {
+        &__avatar {
+            width: 40px;
+            height: 40px;
+        }
+    }
 }

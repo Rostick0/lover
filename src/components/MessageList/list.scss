@@ -4,6 +4,13 @@
         flex-direction: column;
         row-gap: 30px;
         padding: 20px 0;
-        height: calc(100vh - 500px);
+        min-height: calc(100vh - 500px);
+        overflow-y: auto;
+    }
+
+    @media (max-width: 576px) {
+        &__list {
+            min-height: calc(50vh);
+        }
     }
 }
