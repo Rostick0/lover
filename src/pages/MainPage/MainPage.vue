@@ -58,7 +58,7 @@ const peoples = [
                         <div class="registration__content_left">
                             <MainForm></MainForm>
                         </div>
-                        <div class="registration__content_right">
+                        <RouterLink to="/profile/1" class="registration__content_right">
                             <UiButton class="registration__log">
                                 <svg data-v-12e41b4d="" width="24" height="16" viewBox="0 0 27 18"
                                     xmlns="http://www.w3.org/2000/svg" class="auth-btn__icon icon-right">
@@ -68,7 +68,7 @@ const peoples = [
                                 </svg>
                                 <span>Войти</span>
                             </UiButton>
-                        </div>
+                        </RouterLink>
                     </div>
                 </div>
             </div>

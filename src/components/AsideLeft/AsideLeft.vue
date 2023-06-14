@@ -30,7 +30,7 @@ const classIsActive = () => isActiveAside.value ? '_active' : '';
             <ul class="aside__nav aside-nav">
                 <li class="aside-nav__item"
                     :class="{ '_active': $router.currentRoute.value.path === ROUTER_CONST.profileEdit }">
-                    <RouterLink class="aside-nav__link" :to="ROUTER_CONST.profileEdit">
+                    <RouterLink class="aside-nav__link" :to="ROUTER_CONST.profileEdit" @click="setIsActiveAsideFalse">
                         <span class="aside-nav__icon">
                             <svg width="20" height="20" viewBox="0 0 18 18" fill="#252525"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -44,7 +44,7 @@ const classIsActive = () => isActiveAside.value ? '_active' : '';
                 </li>
                 <li class="aside-nav__item"
                     :class="{ '_active': $router.currentRoute.value.path === ROUTER_CONST.chat || $router.currentRoute.value.path.substring(0, 9) === ROUTER_CONST.messages }">
-                    <RouterLink class="aside-nav__link" :to="ROUTER_CONST.chat">
+                    <RouterLink class="aside-nav__link" :to="ROUTER_CONST.chat" @click="setIsActiveAsideFalse">
                         <span class="aside-nav__icon">
                             <svg width="20" height="20" viewBox="0 0 18 13" fill="#252525"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -58,7 +58,7 @@ const classIsActive = () => isActiveAside.value ? '_active' : '';
                     </RouterLink>
                 </li>
                 <li class="aside-nav__item" :class="{ '_active': $router.currentRoute.value.path === ROUTER_CONST.like }">
-                    <RouterLink class="aside-nav__link" :to="ROUTER_CONST.like">
+                    <RouterLink class="aside-nav__link" :to="ROUTER_CONST.like" @click="setIsActiveAsideFalse">
                         <span class="aside-nav__icon">
                             <svg width="20" height="20" viewBox="0 0 19 16" fill="#252525"
                                 xmlns="http://www.w3.org/2000/svg" class="icon-long">
@@ -73,7 +73,7 @@ const classIsActive = () => isActiveAside.value ? '_active' : '';
                 </li>
                 <li class="aside-nav__item"
                     :class="{ '_active': $router.currentRoute.value.path === ROUTER_CONST.settings }">
-                    <RouterLink class="aside-nav__link" :to="ROUTER_CONST.settings">
+                    <RouterLink class="aside-nav__link" :to="ROUTER_CONST.settings" @click="setIsActiveAsideFalse">
                         <span class="aside-nav__icon">
                             <svg width="20" height="20" viewBox="0 0 17 15" fill="#252525"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -86,7 +86,7 @@ const classIsActive = () => isActiveAside.value ? '_active' : '';
                     </RouterLink>
                 </li>
             </ul>
-            <ButtonLogout class="aside__logout"></ButtonLogout>
+            <ButtonLogout class="aside__logout" @click="setIsActiveAsideFalse"></ButtonLogout>
         </div>
     </aside>
 </template>
