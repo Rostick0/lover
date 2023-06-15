@@ -6,6 +6,7 @@ import LayoutDefault from '@/layout/LayoutDefault/LayoutDefault.vue';
 const likes = [
     {
         id: 1,
+        user_id: 1,
         name: 'Вика',
         year: 35,
         type: 'from_me',

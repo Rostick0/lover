@@ -40,4 +40,44 @@
             right: 9px;
         }
     }
+
+    @media (min-width: 600px) {
+        &__mobile_no-active {
+            display: none;
+        }
+    }
+
+    @media (max-width: 600px) {
+        justify-content: space-between;
+
+        &__like {
+            &_content {
+                padding: 0;
+            }
+
+            input:checked+&_content {
+                .switch__detail {
+                    display: block;
+                }
+
+                .switch__mobile_no-active {
+                    display: none;
+                }
+            }
+
+            &_counter {
+                transform: translate(50%, -25%);
+                top: 0;
+                right: 0;
+            }
+        }
+
+        &__detail {
+            display: none;
+        }
+
+        &__mobile_no-active {
+            display: inline-flex;
+        }
+    }
 }
