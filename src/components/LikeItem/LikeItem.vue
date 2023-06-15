@@ -28,7 +28,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <RouterLink class="like__item" :to="ROUTER_CONST.profile + '/' + props.like">
+    <RouterLink class="like__item" :to="ROUTER_CONST.profile + '/' + props.like.user_id">
         <div class="like_item_user user">
             <img width="50" height="50" class="user__avatar" :src="props.like.avatar" :alt="props.like.name">
             <div class="user__info">
